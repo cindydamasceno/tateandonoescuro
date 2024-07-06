@@ -48,51 +48,51 @@ function iniciar(){
     // DEFINE AÇÕES DO BOTÃO DE CLICK (NO CASO DO ELEMENTOS, TOCA E DESATIVA O ÁUDIO)
         //  O INTERRUPTOR ATIVA E DESATIVA A AÇÃO
     interruptor.setAttribute("onclick", "fimJogo()")
-    radio.setAttribute("onclick", "tocarSom('../assets/audio/radio.mp3')")
-    bonecoLivro.setAttribute("onclick", "tocarSom('../assets/audio/livro-audio.mp3')")
-    bonecoParado.setAttribute("onclick", "tocarSom('../assets/audio/parado-audio.mp3')")
-    bonecoEscada.setAttribute("onclick", "tocarSom('../assets/audio/escada-audio.mp3')")
+    radio.setAttribute("onclick", "tocarSom('assets/audio/radio.mp3')")
+    bonecoLivro.setAttribute("onclick", "tocarSom('assets/audio/livro-audio.mp3')")
+    bonecoParado.setAttribute("onclick", "tocarSom('assets/audio/parado-audio.mp3')")
+    bonecoEscada.setAttribute("onclick", "tocarSom('assets/audio/escada-audio.mp3')")
 
     /// DEFINE AÇÕES HOVER MOUSE
 
     interruptor.onmouseenter = function(){
-        mudarSprite(interruptor, "../assets/imagens/interruptor-2.svg")
+        mudarSprite(interruptor, "assets/imagens/interruptor-2.svg")
     }
 
     interruptor.onmouseleave = function(){
-        mudarSprite(interruptor, "../assets/imagens/interruptor-1.svg")
+        mudarSprite(interruptor, "assets/imagens/interruptor-1.svg")
     }
 
     bonecoLivro.onmouseenter = function(){
-        mudarSprite(bonecoLivro, "../assets/imagens/livro-2.svg")
+        mudarSprite(bonecoLivro, "assets/imagens/livro-2.svg")
     }
 
     bonecoLivro.onmouseleave = function(){
-        mudarSprite(bonecoLivro, "../assets/imagens/livro-1.svg")
+        mudarSprite(bonecoLivro, "assets/imagens/livro-1.svg")
     }
 
     bonecoParado.onmouseenter = function(){
-        mudarSprite(bonecoParado, "../assets/imagens/parado-2.svg")
+        mudarSprite(bonecoParado, "assets/imagens/parado-2.svg")
     } 
 
     bonecoParado.onmouseleave = function(){
-        mudarSprite(bonecoParado, "../assets/imagens/parado-1.svg")
+        mudarSprite(bonecoParado, "assets/imagens/parado-1.svg")
     }
 
     bonecoEscada.onmouseenter = function(){
-        mudarSprite(bonecoEscada, "../assets/imagens/escada-2.svg")
+        mudarSprite(bonecoEscada, "assets/imagens/escada-2.svg")
     } 
 
     bonecoEscada.onmouseleave = function(){
-        mudarSprite(bonecoEscada, "../assets/imagens/escada-1.svg")
+        mudarSprite(bonecoEscada, "assets/imagens/escada-1.svg")
     }
 
     radio.onmouseenter = function(){
-        mudarSprite(radio, "../assets/imagens/radio-2.svg")
+        mudarSprite(radio, "assets/imagens/radio-2.svg")
     } 
 
     radio.onmouseleave = function(){
-        mudarSprite(radio, "../assets/imagens/radio-1.svg")
+        mudarSprite(radio, "assets/imagens/radio-1.svg")
     }
 
     /// DEFINIÇÃO DE POSIÇÕES DOS ELEMENTOS
@@ -164,7 +164,7 @@ function fimJogo(){
     if(estado_luz == 0){
         estado_luz = 1;
         foreground.setAttribute("style", "visibility: hidden;");
-        sfx_ambiente = tocarSom("../assets/audio/som-ambiente.mp3", true)
+        sfx_ambiente = tocarSom("assets/audio/som-ambiente.mp3", true)
     }
     else{
         estado_luz = 0
@@ -173,5 +173,5 @@ function fimJogo(){
         randomizarPosicao()
     }
     
-    tocarSom("../assets/audio/light-switch.mp3")
+    tocarSom("assets/audio/light-switch.mp3")
 }
