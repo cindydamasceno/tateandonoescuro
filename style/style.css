@@ -1,0 +1,43 @@
+/*  IMPORTA FONTE PERSONALIZADA */
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+#expediente {
+    font-size: medium;
+    /* margin-bottom: 1%; */
+    font-family: "Kode Mono", monospace;
+    position: absolute;
+}
+
+body{
+    border: auto;
+    margin: auto;
+    /* position: relative; */
+}
+
+#bg{
+    position: absolute;
+}
+
+#fg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(40, 40, 40);
+    pointer-events: none; 
+}
+
+.elemento {
+    position: absolute;
+}
+
+.elemento:hover{
+    cursor: pointer;
+}
+
+
+/* ATIVA ROTAÇÃO DO INTERRUPTOR NO HOVER */
+
+#interruptor:hover{
+    rotate: 5deg;
+}
